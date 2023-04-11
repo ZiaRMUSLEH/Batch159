@@ -17,7 +17,7 @@ public class ArrayList01 {
 
     public static void main(String[] args) {
 
-        //How to create an ArrayList
+       //How to create an ArrayList
         ArrayList<String> names = new ArrayList<>();
         System.out.println(names);// [ ]
 
@@ -114,5 +114,11 @@ public class ArrayList01 {
 
         nums.removeAll(heights);
         System.out.println(nums);// [ 5, 19 ]
+
+
+
+
+
+
     }
 }

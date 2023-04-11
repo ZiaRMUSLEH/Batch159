@@ -21,55 +21,59 @@ public class ArrayListRPT {
         System.out.println(nums);
 
         //How to add elements into an ArrayList
+
         //add() method adds the elements into the List in insertion order.
-        nums.add(1);
-        nums.add(2);
-        nums.add(3);
-        nums.add(4);
+        nums.add(5);
+        nums.add(6);
+        nums.add(7);
         System.out.println(nums);
+
         //add(index, element) puts the given element into the given index
-        nums.add(2,5);
-        nums.add(1, 6);
+        nums.add(2, 45);
         System.out.println(nums);
+
         //addAll() method is for adding a list into another list
-        ArrayList<Integer> nms = new ArrayList<>();
-        nms.add(45);
-        nms.add(25);
-        nums.addAll(nms);
+        ArrayList<Integer> numbers = new ArrayList<>();
+        numbers.add(8);
+        numbers.add(9);
+        numbers.add(10);
+
+        nums.addAll(numbers);
         System.out.println(nums);
+
         //addAll() method is for adding a list into another list at the given index
-        nums.addAll(5,nms);
+        nums.addAll(1, numbers);
         System.out.println(nums);
+
         //How to check if a List is empty or not
-        ArrayList<String> cities = new ArrayList<>();
-        System.out.println(cities.isEmpty());
-        cities.add("New york");
-        cities.add("miami");
-        System.out.println(cities.isEmpty());
+        System.out.println(nums.isEmpty());
 
         //Example 1: Create 2 Character ArrayList and check if the lists are equal to each other or not
-        ArrayList<Character> a = new ArrayList<>();
-        a.add('J');
-        a.add('a');
-        a.add('v');
-        a.add('a');
+       ArrayList<Character> ch1 = new ArrayList<>();
+       ch1.add('J');
+       ch1.add('a');
+       ch1.add('v');
+       ch1.add('a');
 
-        ArrayList<Character> b = new ArrayList<>();
-        b.add('J');
-        b.add('a');
-        b.add('v');
-        b.add('a');
-            if (a.equals(b)){
-                System.out.println("they are equal");
-            } else {
-                System.out.println("they are not equal");
-            }
+        ArrayList<Character> ch2 = new ArrayList<>();
+        ch2.add('J');
+        ch2.add('a');
+        ch2.add('v');
+        ch2.add('a');
+
+        if (ch1.equals(ch2)){
+            System.out.println("they are equal");
+        }else {
+            System.out.println("they are not equal");
+        }
+
 
         //Example 2: Type code to print unique elements in an ArrayList
-        for (Character w: b){
-            if (b.indexOf(w)==b.lastIndexOf(w) ){
-                System.out.print(w +" ");
+        for (Character w:ch1){
+            if (ch1.indexOf(w)==ch1.lastIndexOf(w)){
+                System.out.print(w);
             }
         }
+
     }
 }
