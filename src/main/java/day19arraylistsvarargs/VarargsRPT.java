@@ -18,7 +18,11 @@ public static int add (int...v){
             sum = sum + w;
 
         } return sum;
-}
+
+
+
+
+    }
 
 
 }
