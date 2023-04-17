@@ -1,9 +1,12 @@
 package day20methodoverloadingdatetime;
 
+import javax.swing.text.DateFormatter;
+import java.text.DateFormat;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.Month;
 import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class DateTime01 {
@@ -74,5 +77,24 @@ public class DateTime01 {
         DayOfWeek dayName = myDob.getDayOfWeek();
 
         System.out.println(dayName);
+
+
+
+        //How to format date
+        LocalDate current = LocalDate.now();
+
+        System.out.println(current);// ==> 2023-04-16
+
+        //"m" is reserved for minute, that is why we use "M" for month
+        //"M" makes the month number single digit if it is less than 10
+        //"MM" makes the month number two digits if it is less than 10
+        //"MMM" gives you first three characters of month name
+        //"MMMM" gives you full month name
+        //"yyyy" gives you the year in 4 digits
+        //"yy" gives you the last two digits of the year
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MMMM/yy");
+        String myDate = dtf.format(current);
+        System.out.println(myDate);// ==> 16/04/2023
+
     }
 }
