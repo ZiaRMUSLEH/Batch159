@@ -14,14 +14,16 @@ public class DateTimeRPT {
         //How to format time
         //"hh" uses 12 hours system, "HH" uses 24 hours system
         //Using "a" at the end it tells you if it is AM or PM
-        DateTimeFormatter dif = DateTimeFormatter.ofPattern("hh:mm a");
-        System.out.println(dif.format(currentTime)); // 11:08 AM
+        String format = currentTime.format(DateTimeFormatter.ofPattern("HH:mm"));
+        System.out.println(format);
 
-        LocalDateTime currentDateTime= LocalDateTime.now();
-        System.out.println(currentDateTime); // 2023-04-16T11:15:58.115333
+        LocalDateTime currentDateAndTime = LocalDateTime.now();
+        System.out.println("currentDateAndTime = " + currentDateAndTime);
+        // 2023-04-16T11:15:58.115333
 
-        LocalDateTime japanDateAndTime = LocalDateTime.now(ZoneId.of("Asia/Tokyo"));
-        System.out.println(japanDateAndTime); //2023-04-18T00:41:03.640894200
+        LocalDateTime tokyoDateAndTime = LocalDateTime.now(ZoneId.of("Asia/Tokyo"));
+        System.out.println("tokyoDateAndTime = " + tokyoDateAndTime);
+        //2023-04-18T00:41:03.640894200
 
 
 
