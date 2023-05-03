@@ -1,4 +1,4 @@
-package day25inheritanceoverriding;
+package day25inheritanceoverridingsara;
 
 public class Animal {
     public int age=4;

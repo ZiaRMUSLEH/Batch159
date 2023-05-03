@@ -4,21 +4,9 @@ public class VehicleRunner {
 
     public static void main(String[] args) {
 
-        Civic myCivic= new Civic();
+        Civic myCivic = new Civic(5);//It takes me to the constructor with
+        //int parameter in Civic Class
 
-        myCivic.brake();
-        myCivic.engine();
-        myCivic.ecoSystem();
-        int hashCode= myCivic.hashCode();
-
-        System.out.println("hashCode = " + hashCode);
-
-        Accord myAcc= new Accord();
-
-        myAcc.turboSystem();
-        myAcc.brake();
-        myAcc.move();
 
     }
-
 }

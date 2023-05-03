@@ -1,4 +1,4 @@
-package day25inheritanceoverriding;
+package day25inheritanceoverridingsara;
 
 public class Mammal extends Animal{
 

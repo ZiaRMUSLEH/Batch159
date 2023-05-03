@@ -1,4 +1,4 @@
-package day24inheritance.RPT;
+package day27encapsulationabstraction.RPT_abstract;
 
 public class Samsung extends CellPhones {
 
@@ -11,6 +11,11 @@ public class Samsung extends CellPhones {
 
     public Samsung(int a) {
         System.out.println("Samsung constructor" + 2);
+    }
+
+    @Override
+    public void art () {
+
     }
 
 

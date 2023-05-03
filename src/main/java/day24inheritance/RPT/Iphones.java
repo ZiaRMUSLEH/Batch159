@@ -1,8 +1,19 @@
 package day24inheritance.RPT;
 
 public class Iphones extends CellPhones {
-    public void ios (){System.out.println("uses ios system");}
 
-    public Iphones() {System.out.println("it is Iphones constructor");}
+    //public String ios = "uses ios programing";
+    //public String className = "Iphones";
+
+    public Iphones() {
+//super();
+        System.out.println("Iphones constructor 1");
+    }
+    public Iphones(int a) {
+        super(3);
+        System.out.println("Iphones constructor" + 2);
+    }
 
 }
+
+

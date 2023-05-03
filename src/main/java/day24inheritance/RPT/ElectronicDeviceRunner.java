@@ -3,46 +3,24 @@ package day24inheritance.RPT;
 public class ElectronicDeviceRunner {
     public static void main(String[] args) {
 
-//it is electronic devices constructor
-//it is cell phones constructor
-//it is Iphones constructor
+        //CellPhones myCellPhones = new CellPhones();
+        //System.out.println(myCellPhones.className);
+        //System.out.println(myCellPhones.uses);
+        //System.out.println(myCellPhones.sizes);
 
-    Iphones myIphone = new Iphones();
-    myIphone.ios();
-    myIphone.sizes();
-    myIphone.usage();
-    myIphone.usesElc();
-    myIphone.haveSlr();
+        // mySamsung = new Samsung();
+        //System.out.println(mySamsung.className);
+        //System.out.println(mySamsung.uses);
+        //System.out.println(mySamsung.sizes);
+        //System.out.println(mySamsung.android);
 
-    //it is electronic devices constructor
-        //it is cell phones constructor
-        //it is  Samsung constructor
+        CellPhones obj = new Iphones();
+        obj.display(12);
 
-    Samsung mySamsung = new Samsung();
-    mySamsung.andrd();
-    mySamsung.sizes();
-    mySamsung.usage();
-    mySamsung.usesElc();
-    mySamsung.haveSlr();
-
-    Dell myDell = new Dell();
-    myDell.dell();
-    myDell.models();
-    myDell.intDev();
-    myDell.usesElc();
-    myDell.haveSlr();
-
-    Hp myHp = new Hp();
-    myHp.hp();
-    myHp.models();
-    myHp.intDev();
-    myHp.usesElc();
-    myHp.haveSlr();
+        //System.out.println(myIphone.className);
+        //System.out.println(myIphone.uses);
+        //System.out.println(myIphone.sizes);
+        //System.out.println(myIphone.ios);
 
 
-
-
-
-
-
-}   }
+    }   }

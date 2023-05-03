@@ -1,4 +1,4 @@
-package day24inheritance.RPT;
+package day26polymorphism.RPT;
 
 public class Samsung extends CellPhones {
 

@@ -2,8 +2,22 @@ package day24inheritance.RPT;
 
 public class ElectronicDevice {
 
-   public void usesElc (){System.out.println("It work by using electric energy");}
-   public void haveSlr (){System.out.println("It have battery and solar panel to store energy");}
 
-   public ElectronicDevice() {System.out.println("it is electronic devices constructor");}
+    //public String uses = "Electric to work";
+    //public String className = "ElectronicDevice";
+
+    int b = 11;
+    public void display (int a){
+        System.out.println(a);
+    }
+
+    public ElectronicDevice() {
+        System.out.println("ElectronicDevice constructor 1");
+    }
+
+
+    public ElectronicDevice(int a) {int b;}
+
+
+
 }

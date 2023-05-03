@@ -23,6 +23,7 @@ public class Wrapper01RPT {
         System.out.println(Byte.MIN_VALUE);// -128
         System.out.println(Byte.MAX_VALUE);// 127
 
+
         //Example 1: Find the sum of the min and max value of short data type
         short min = Short.MIN_VALUE;
         short max = Short.MAX_VALUE;
