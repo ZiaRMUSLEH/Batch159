@@ -29,6 +29,8 @@ public class Queue01 {
         food.add("Jam");
         System.out.println(food);// [Milk, Cheese, Meat, Yoghurt, Jam]
 
+
+
         PriorityQueue<String> myFood = new PriorityQueue<>();
         myFood.add("Milk");
         myFood.add("Cheese");
