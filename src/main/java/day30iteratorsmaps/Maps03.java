@@ -13,19 +13,19 @@ public class Maps03 {
     public static void main(String[] args) {
 
         String sentence = "java is easy";
-        sentence = sentence.replaceAll("\\s", "");
+        sentence = sentence.replaceAll("[^a-zA-Z]", "");
         String [] charachters = sentence.split("");
 
-        HashMap<String, Integer> occurance = new HashMap();
+        HashMap<String, Integer> occuranceMap = new HashMap();
         for (String w: charachters){
-          Integer occnum =  occurance.get(w);
+          Integer occnum =  occuranceMap.get(w);
           if (occnum == null){
-              occurance.put(w, 1);
+              occuranceMap.put(w, 1);
           }else {
-              occurance.put(w, occnum+1);
+              occuranceMap.put(w, occnum+1);
           }
         }
-        System.out.println("occurance = " + occurance);
+        System.out.println("occurance = " + occuranceMap);
 
 
     }
