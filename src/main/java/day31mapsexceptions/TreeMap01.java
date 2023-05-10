@@ -22,7 +22,7 @@ public class TreeMap01 {
         tm.put("Tom Hanks", 65);
         tm.put("Brad Pitt", 56);
         tm.put("Ajda Pekkan", 76);
-        tm.put("Cuneyt Arkin", 78);
+        tm.put(null, 78);
         System.out.println(tm);// {Ajda Pekkan=76, Ali Can=13, Brad Pitt=56, Cuneyt Arkin=78, Tom Hanks=65}
 
         long t2 = System.nanoTime();

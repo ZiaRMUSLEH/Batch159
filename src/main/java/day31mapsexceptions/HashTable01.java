@@ -18,6 +18,7 @@ public class HashTable01 {
         ht.put("Ali Can", 13);
         ht.put("Tom Hanks", 65);
         ht.put("Brad Pitt", 56);
+
         //ht.put(null, 45); ==> HashTable does not accept null in "key"s
         //ht.put("Mark Twain", null); ==> HashTable does not accept null in "value"s
 
